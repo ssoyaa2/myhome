@@ -20,8 +20,6 @@
         <hr>
         <div class="necessary"><span>* </span>필수 입력 항목</div><br>
         <div class="container bg-primary text-white">기본 정보</div><br>
-
-        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6">
                     <label>이 름<span>*</span><br><input type="text" id="your_name" name="your_name" class="form-control"></label><br>
@@ -74,22 +72,36 @@
                                     <input type="datetime-local" class="form-control"></label>
                             </div>
                         </div>
-                <p><div class="container bg-secondary text-white">업무 경력 </div></p>
-                    <div class="form-check">
-                        <label class="form-check-label">최종 직위
-                            <input type="radio" name="position" id="p1" value="one"> 사원급
-                            <input type="radio" name="position" id="p2" value="two"> 대리 ~ 과장
-                            <input type="radio" name="position" id="p3" value="three"> 차장급 이상
-                            <input type="radio" name="position" id="p4" value="four"> 임원급
-                        </label>
+                <div class="container bg-secondary text-white">업무 경력 </div><br>
+                <div class="form-group row">
+                    <label class="col-sm-2">최종 직위</label>
+                    <div class="col-sm-10">
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="position" id="p1" value="one"> 사원급</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="position" id="p2" value="two"> 대리 ~ 과장</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="position" id="p3" value="three"> 차장급 이상</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="position" id="p4" value="four"> 임원급</label>
+                        </div>
                     </div>
+                </div>
+                    <br>
                     <label>주요 담당 업무<br>
                         <br><textarea name="work" class="form-control" id="work" cols="80" rows="10">담당했던 주요 업무를 기술하시오.</textarea></label> <br>
                 <p style="text-align: center;">
                     <input type="submit" class="btn btn-outline-primary" value="제 출" id="submit">
                     <input type="reset" class="btn btn-outline-primary" value="재작성">
                 </p>
-        </div>
+        </p>
 </div>
 </body>
 </html>
