@@ -20,56 +20,60 @@
         <hr>
         <div class="necessary"><span>* </span>필수 입력 항목</div><br>
         <div class="container p-2 bg-primary text-white">기본 정보</div><br>
+
+        <form>
             <div class="row">
                 <div class="col-sm-6">
-                    <label>이 름<span>*</span><br><input type="text" id="your_name" name="your_name" class="form-control"></label><br>
+                    <label>이 름<span>*</span></label>
+                        <input type="text" id="your_name" name="your_name" class="form-control">
                 </div>
                 <div class="col-sm-6">
-                    <label>모바일 폰<span>* </span><br><input type="tel" id="tel" name="tel" class="form-control" placeholder="010-0000-0000"></label><br>
+                    <label>모바일 폰<span>* </span></label><input type="tel" id="tel" name="tel" class="form-control" placeholder="010-0000-0000">
                 </div>
             </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <label>이메일<span>* </span><br><input type="email" id="email" name="email" class="form-control" placeholder="id@domain_name"></label><br>
+                        <label>이메일<span>* </span></label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="id@domain_name">
                     </div>
                     <div class="col-sm-6">
-                       <label>개인 홈페이지 <br><input type="url" id="url" name="url" class="form-control" placeholder="http://"></label><br>
+                       <label>개인 홈페이지 </label><input type="url" id="url" name="url" class="form-control" placeholder="http://">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <label>암 호<span>* </span><br><input type="password" id="psw" name="psw" class="form-control"></label><br>
+                        <label>암 호<span>* </span></label><input type="password" id="psw" name="psw" class="form-control">
                     </div>
                     <div class="col-sm-6">
-                       <label>주 소<span>* </span><br><input type="text" id="adress" name="adress" class="form-control"></label><br>
+                        <label>주 소<span>* </span></label><input type="text" id="adress" name="adress" class="form-control">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <label>암호 확인<span>* </span><br><input type="password" id="psw1" name="psw1" class="form-control"></label><br>
+                        <label>암호 확인<span>* </span></label><input type="password" id="psw1" name="psw1" class="form-control">
                     </div>
-                </div>
+                </div><br>
                 <p><div class="container p-2 bg-success text-white">학력 </div></p>
                     <div class="row">
                         <div class="col-sm-6">
-                            <label>학교명<span>* </span><br><input type="text" id="s_name" name="s_name" class="form-control"></label><br>
+                            <label>학교명<span>* </span></label><input type="text" id="s_name" name="s_name" class="form-control">
                         </div>
                         <div class="col-sm-6">
-                           <label>졸업 여부<span>* </span><br>
+                            <label>졸업 여부<span>* </span></label>
                                 <select name="graduation" id="info" class="form-control">
                                     <option value="1">---선택---</option>
                                     <option value="2">졸업예정</option>
                                     <option value="3">졸업</option>
-                                </select> </label> <br>
+                                </select> <br>
                         </div>
                     </div>
                     <div class="row">
                             <div class="col-sm-6">
-                                <label>전 공<span>* </span><br><input type="text" id="major" name="major" class="form-control"></label> <br>
+                                <label>전 공<span>* </span></label><input type="text" id="major" name="major" class="form-control">
                             </div>
                             <div class="col-sm-6">
-                                <label>졸업(예정)년도<span>* </span><br>
-                                    <input type="datetime-local" class="form-control"></label>
+                                <label>졸업(예정)년도<span>* </span></label>>
+                                    <input type="datetime-local" class="form-control">
                             </div>
                         </div><br>
                 <div class="container p-2 bg-secondary text-white">업무 경력 </div><br>
@@ -95,13 +99,13 @@
                     </div>
                 </div>
                     <br>
-                    <label>주요 담당 업무<br>
-                        <br><textarea name="work" class="form-control" id="work" cols="80" rows="10">담당했던 주요 업무를 기술하시오.</textarea></label> <br>
+                <label>주요 담당 업무</label><br>
+                        <br><textarea name="work" class="form-control" id="work" cols="80" rows="10">담당했던 주요 업무를 기술하시오.</textarea><br>
                 <p style="text-align: center;">
                     <input type="submit" class="btn btn-outline-primary" value="제 출" id="submit">
                     <input type="reset" class="btn btn-outline-primary" value="재작성">
                 </p>
-        </p>
+            </form>
 </div>
 </body>
 </html>
